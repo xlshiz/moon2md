@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "moon2md"
+version = "0.1.0"
+description = "Moon+ Reader 高亮/批注导出工具 — 将 .mrexpt 转换为 Markdown"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "moon2md contributors"},
+]
+requires-python = ">=3.6"
+keywords = ["moon+reader", "mrexpt", "highlights", "annotations", "markdown"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Text Processing :: Markup",
+]
+
+[project.urls]
+Homepage = ""
+
+[tool.setuptools.packages.find]
+include = ["moon2md*"]
+
+[project.scripts]
+moon2md = "moon2md.mrexpt2md:main"

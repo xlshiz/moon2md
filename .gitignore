@@ -1,0 +1,29 @@
+# mrexpt 源文件（如需提交样本，请脱敏或重命名）
+*.mrexpt
+
+# 生成文件
+*.md
+!README.md
+!DESIGN.md
+!USAGE.md
+!FORMAT.md
+!CHANGELOG.md
+!CONTRIBUTING.md
+!TODO.md
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
